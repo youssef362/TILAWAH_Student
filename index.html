@@ -275,32 +275,43 @@ footer .gold{color:var(--gold-bright)}
   .split{display:none}
   .spine{display:none}
   .band-inner{gap:18px}
-  .uni,.branch{max-width:100%}
+  /* stack the workstreams into full-width cards */
+  .branches{flex-direction:column;gap:36px;align-items:center}
+  .unis{flex-direction:column;gap:16px;align-items:center}
+  .branch,.uni{width:100%;max-width:520px;min-width:0;flex:none}
+  .branch h3,.uni h3{font-size:20px}
+  /* connector arrow between stacked branches */
+  .branches .branch{position:relative}
+  .branches .branch:not(:last-child)::after{content:'▼';display:block;text-align:center;
+    color:var(--gold);font-size:18px;position:absolute;
+    left:50%;transform:translateX(-50%);bottom:-27px}
 }
 /* phones */
 @media(max-width:520px){
   body{padding:0 0 40px}
-  .band{padding:24px 16px 60px}
+  .band{padding:24px 16px 56px}
   .band-inner{gap:14px}
-  .wrap{padding:0 14px 48px}
+  .wrap{padding:0 16px 48px}
   .tilawah-chip{width:112px;height:112px}
   .tilawah-chip .disc{width:96px;height:96px}
   .tilawah-chip .disc img{width:96px;height:96px}
   .vision-chip img{height:60px}
   .logo-chip{padding:9px;border-radius:16px}
-  .band-title .kicker{font-size:10px;letter-spacing:2px;padding:4px 12px}
-  .band-title .sub{font-size:12px}
-  .plaque{margin:-30px auto 34px;padding:26px 18px 24px;border-radius:18px}
+  .band-title h1{font-size:26px}
+  .plaque{margin:-28px auto 32px;padding:26px 18px 24px;border-radius:18px}
   .plaque .eyebrow{font-size:10px;letter-spacing:2px}
   .plaque .eyebrow::before,.plaque .eyebrow::after{width:20px}
-  .chip{font-size:12px;padding:7px 7px 7px 16px}
+  .chip{font-size:13px;padding:8px 8px 8px 16px}
   .chip .en{display:none}
-  .divide{padding:16px 18px;font-size:14.5px}
-  .form .grid{padding:16px;gap:10px}
+  .divide{padding:16px 18px;font-size:15px}
+  .form .grid{padding:16px;gap:12px}
   .crit .en{padding-right:0}
-  .branch{padding:24px 16px 20px;min-width:0}
-  .uni{min-width:0}
-  .compass{font-size:12px;padding:12px 14px}
+  .branch{padding:26px 18px 22px}
+  .branch h3,.uni h3{font-size:21px}
+  .step{font-size:15px;padding:14px 16px}
+  .step .en2{font-size:12px}
+  .compass{font-size:13.5px;padding:14px 16px}
+  .compass .c-en{font-size:12.5px}
   footer .in{gap:8px;font-size:12px}
 }
 @media(prefers-reduced-motion:reduce){
