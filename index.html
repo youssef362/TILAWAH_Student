@@ -274,7 +274,11 @@ footer .gold{color:var(--gold-bright)}
   .form .grid{grid-template-columns:1fr}
   .split{display:none}
   .spine{display:none}
-  .band-inner{gap:18px}
+  /* center-stack the header */
+  .band-inner{flex-direction:column;align-items:center;text-align:center;gap:20px}
+  .band-title{order:2;min-width:0}
+  .tilawah-chip{order:1}
+  .vision-chip{order:3}
   /* stack the workstreams into full-width cards */
   .branches{flex-direction:column;gap:36px;align-items:center}
   .unis{flex-direction:column;gap:16px;align-items:center}
