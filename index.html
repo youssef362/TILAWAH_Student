@@ -243,7 +243,7 @@ body{
   padding:12px 14px;margin-top:0;font-size:13.5px;font-weight:600;line-height:1.55;
   display:flex;align-items:center;gap:11px;
 }
-.step .en2{display:block;font-size:11px;color:var(--muted);direction:ltr;font-weight:500;margin-top:2px}
+.step .en2{display:block;font-size:11px;color:var(--muted);direction:ltr;text-align:left;unicode-bidi:isolate;font-weight:500;margin-top:2px}
 .step .dot{min-width:28px;height:28px;border-radius:9px;background:var(--green);color:#fff;
   display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;flex-shrink:0}
 .branch.b-gold .step .dot{background:var(--gold)}
@@ -255,6 +255,9 @@ body{
 }
 .compass .hd{display:flex;align-items:center;gap:8px;color:var(--green-deep);font-weight:800;margin-bottom:5px}
 .compass .hd svg{flex-shrink:0}
+.compass .c-ar{direction:rtl;text-align:right}
+.compass .c-en{display:block;margin-top:6px;direction:ltr;text-align:left;unicode-bidi:isolate;
+  font-weight:500;font-size:11.5px;color:#93762A;font-style:italic}
 
 /* footer */
 footer{background:var(--green-deep);color:#fff;margin-top:20px;padding:26px 20px;text-align:center}
@@ -445,7 +448,8 @@ footer .gold{color:var(--gold-bright)}
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#083A2A" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88" fill="#BE9B36" stroke="none"/></svg>
               بوصلتنا في المشروع
             </div>
-            هذه المراجعات هي البوصلة التي نفهم بها موقعنا الحقيقي، وهي <b>نظّارتنا على العالم الواقعي</b> — our compass &amp; glasses on the real world.
+            <div class="c-ar">هذه المراجعات هي البوصلة التي نفهم بها موقعنا الحقيقي، وهي <b>نظّارتنا على العالم الواقعي</b>.</div>
+            <span class="c-en">Our compass &amp; glasses on the real world.</span>
           </div>
         </div>
 
@@ -461,7 +465,8 @@ footer .gold{color:var(--gold-bright)}
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#083A2A" stroke-width="2"><path d="M12 2l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5" stroke="#0E6B4A"/></svg>
               كيف يساعدون أكثر
             </div>
-            الذهاب إلى <b>دور تحفيظ القرآن الكريم</b> والعمل على <b>جلب مزيد من الأصوات</b> لإثراء البيانات — visiting Qur'an memorization houses to gather more voices.
+            <div class="c-ar">الذهاب إلى <b>دور تحفيظ القرآن الكريم</b> والعمل على <b>جلب مزيد من الأصوات</b> لإثراء البيانات.</div>
+            <span class="c-en">Visiting Qur'an memorization houses to gather more voices.</span>
           </div>
         </div>
 
