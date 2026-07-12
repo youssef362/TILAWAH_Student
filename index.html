@@ -57,22 +57,10 @@ body{
   display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
 .logo-chip{background:#fff;border-radius:20px;padding:12px;box-shadow:0 12px 30px -10px rgba(0,0,0,.4);flex-shrink:0}
 .logo-chip img{display:block;height:104px;width:auto;border-radius:10px}
-/* Tilawah logo — clean floating disc */
-.tilawah-chip{
-  position:relative;background:transparent;box-shadow:none;padding:0;
-  width:150px;height:150px;display:grid;place-items:center;
-  animation:float 5.5s ease-in-out infinite;
-}
-.tilawah-chip .disc{
-  width:126px;height:126px;border-radius:50%;overflow:hidden;
-  background:#fff;display:grid;place-items:center;position:relative;z-index:2;
-  box-shadow:0 12px 30px -8px rgba(0,0,0,.45), inset 0 0 0 4px rgba(255,255,255,.9);
-}
-.tilawah-chip .disc img{height:126px;width:126px;object-fit:cover;border-radius:0;transform:scale(1.18)}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-@media(prefers-reduced-motion:reduce){
-  .tilawah-chip{animation:none}
-}
+/* Tilawah logo — matches the Vision chip, tighter */
+.tilawah-chip{padding:6px}
+.tilawah-chip .disc{display:block}
+.tilawah-chip .disc img{display:block;height:78px;width:auto;border-radius:8px}
 .band-title{text-align:center;flex:1;min-width:280px}
 .band-title .kicker{display:inline-block;font-family:'Reem Kufi',sans-serif;
   font-size:12px;letter-spacing:3px;color:var(--gold-soft);
@@ -296,9 +284,7 @@ footer .gold{color:var(--gold-bright)}
   .band{padding:24px 16px 56px}
   .band-inner{gap:14px}
   .wrap{padding:0 16px 48px}
-  .tilawah-chip{width:112px;height:112px}
-  .tilawah-chip .disc{width:96px;height:96px}
-  .tilawah-chip .disc img{width:96px;height:96px}
+  .tilawah-chip .disc img{height:64px}
   .vision-chip img{height:60px}
   .logo-chip{padding:9px;border-radius:16px}
   .band-title h1{font-size:26px}
